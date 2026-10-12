@@ -1,0 +1,21 @@
+# Rust
+/target
+
+# Frontend
+node_modules/
+/apps/desktop/build/
+/apps/desktop/.svelte-kit/
+vite.config.*.timestamp-*
+
+# Tauri (capability schemas, regenerated on build)
+/apps/desktop/src-tauri/gen/schemas
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS and editors
+.DS_Store
+.idea/
+.claude/settings.local.json
