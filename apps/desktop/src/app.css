@@ -1,0 +1,34 @@
+/* Global styles. Every colour, font, radius and duration comes from the active theme's tokens. */
+
+@import './lib/theme/tokens.css';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	background: var(--ground);
+	color: var(--text);
+	font-family: var(--font-ui);
+	font-size: var(--ui-size);
+	-webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+	outline: var(--focus-width) solid var(--focus);
+	outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition: none !important;
+		animation: none !important;
+	}
+}

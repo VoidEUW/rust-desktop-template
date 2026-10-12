@@ -1,0 +1,8 @@
+{
+	"app.title": "App",
+	"home.tagline": "A desktop app built with Tauri and Svelte.",
+	"home.name.label": "Your name",
+	"home.name.placeholder": "Ada",
+	"home.greet": "Greet",
+	"home.error": "Could not reach the app core."
+}

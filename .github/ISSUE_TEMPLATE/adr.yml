@@ -1,0 +1,39 @@
+name: Architecture decision
+description: A structural question that needs a decision record. Resolve it with `/solve-adr <number>` in Claude Code.
+title: "ADR: "
+labels: [adr]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the question, not the answer. The decision is worked out on the branch and recorded
+        in `docs/adr/` by the pull request that closes this issue. See `docs/adr/README.md`.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What needs to be decided, in one or two sentences?
+      placeholder: How does the app store user data on disk?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and constraints
+      description: Why this comes up now, what it touches, and what any answer must satisfy.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options known so far
+      description: Leave empty if none yet.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] ADR merged in `docs/adr/`
+        - [ ] The matching section of `ARCHITECTURE.md` is updated
+    validations:
+      required: true
